@@ -12,7 +12,7 @@ const Navbar = () => {
 
       </Link>
 
-      <Link to="/routes/upload " className="primary-button w-fit">
+      <Link to="/upload " className="primary-button w-fit">
 
         Upload Resume
 
