@@ -11,7 +11,7 @@
     <img alt="Static Badge" src="https://img.shields.io/badge/Puter.js-181758?style=for-the-badge&logoColor=white">
   </div>
 
-  <h3 align="center">ResuMate - AI Resume Analyzer</h3>
+  <h3 align="center">ResumAi</h3>
 
 </div>
 
@@ -77,7 +77,7 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-git clone https://github.com/Firoz768/Ai-Resume-Analyzer.git
+git clone https://github.com/Firoz768/Ai-Powered-Resume-Analyzer.git
 cd Ai-Powered-Resume-analyzer
 ```
 
