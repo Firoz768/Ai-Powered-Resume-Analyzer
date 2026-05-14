@@ -14,13 +14,13 @@ const Auth = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        if(auth.isAuthenticated) navigate(next);
-    }, [auth.isAuthenticated, next])
+        if(auth.isAuthenticated) navigate(next || "/");
+    }, [auth.isAuthenticated, next, navigate])
 
     return (
-        <main className="bg-[url('/images/bg-auth.svg')] bg-cover min-h-screen flex items-center justify-center">
-            <div className="gradient-border shadow-lg">
-                <section className="flex flex-col gap-8 bg-white rounded-2xl p-10">
+        <main className="min-h-screen flex items-center justify-center transition-colors duration-300">
+            <div className="gradient-border shadow-2xl shadow-indigo-500/10 dark:shadow-none animate-fade-in-up">
+                <section className="flex flex-col gap-10 glass-panel border border-white/40 dark:border-slate-700/50 p-12">
                     <div className="flex flex-col items-center gap-2 text-center">
                         <h1>Welcome</h1>
                         <h2>Log In to Continue Your Job Journey</h2>

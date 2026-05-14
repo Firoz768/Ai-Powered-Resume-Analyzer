@@ -27,6 +27,7 @@ export const resumes: Resume[] = [
                 score: 90,
                 tips: [],
             },
+            jobRecommendations: [],
         },
     },
     {
@@ -57,6 +58,7 @@ export const resumes: Resume[] = [
                 score: 90,
                 tips: [],
             },
+            jobRecommendations: [],
         },
     },
     {
@@ -87,6 +89,7 @@ export const resumes: Resume[] = [
                 score: 90,
                 tips: [],
             },
+            jobRecommendations: [],
         },
     },
     {
@@ -117,6 +120,7 @@ export const resumes: Resume[] = [
                 score: 90,
                 tips: [],
             },
+            jobRecommendations: [],
         },
     },
     {
@@ -147,6 +151,7 @@ export const resumes: Resume[] = [
                 score: 90,
                 tips: [],
             },
+            jobRecommendations: [],
         },
     },
     {
@@ -177,6 +182,7 @@ export const resumes: Resume[] = [
                 score: 90,
                 tips: [],
             },
+            jobRecommendations: [],
         },
     },
 ];
@@ -223,6 +229,12 @@ export const AIResponseFormat = `
           explanation: string; //explain in detail here
         }[]; //give 3-4 tips
       };
+      jobRecommendations: {
+        jobTitle: string; // alternative or matching job title based on score and applied role
+        company: string; // suggest a real-world company name that typically recruits for this role
+        matchPercentage: number; // match percentage
+        reason: string; // brief explanation why
+      }[]; //give 2-3 recommendations
     }`;
 
 export const prepareInstructions = ({jobTitle, jobDescription}: { jobTitle: string; jobDescription: string; }) =>

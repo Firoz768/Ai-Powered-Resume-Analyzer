@@ -40,7 +40,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         <script src="https://js.puter.com/v2/"></script>
-        {children}
+        <div className="relative flex min-h-screen flex-col">
+          <div className="fixed inset-0 z-[-1] bg-slate-50 dark:bg-slate-950 transition-colors duration-300">
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(99,102,241,0.15),rgba(255,255,255,0))] dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(99,102,241,0.1),rgba(2,6,23,0))]"></div>
+          </div>
+          {children}
+        </div>
         <ScrollRestoration />
         <Scripts />
       </body>

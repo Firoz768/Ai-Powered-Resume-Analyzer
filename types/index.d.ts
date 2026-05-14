@@ -55,4 +55,10 @@ interface Feedback {
       explanation: string;
     }[];
   };
-}
+  jobRecommendations: {
+    jobTitle: string;
+    company: string;
+    matchPercentage: number;
+    reason: string;
+  }[];
+}
